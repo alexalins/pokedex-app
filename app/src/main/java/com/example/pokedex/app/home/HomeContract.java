@@ -5,12 +5,12 @@ import com.example.pokedex.app.mvp.BasicContract;
 
 import java.util.List;
 
-public class HomeContract {
-    interface View extends BasicContract.BaseView<Presenter> {
+public interface HomeContract {
+    interface View extends BasicContract.BaseView {
         void errorMessage();
         void sucessToast();
         void loading();
-        void startHomeActivity();
+        void mountAdpater();
     }
 
     interface Presenter extends BasicContract.BasePresenter {

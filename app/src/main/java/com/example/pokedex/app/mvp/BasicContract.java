@@ -1,8 +1,7 @@
 package com.example.pokedex.app.mvp;
 
 public interface BasicContract {
-    interface BaseView<T> {
-        void setPresenter(T presenter);
+    interface BaseView {
         void bindViews();
     }
 
